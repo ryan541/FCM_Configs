@@ -7,6 +7,8 @@ import 'package:run/home_screen.dart';
 import 'firebase_api.dart';
 import 'notification.dart';
 
+final navigatorKey = GlobalKey<NavigatorState>();
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/home',
+      initialRoute: '/note',
       getPages: [
         GetPage(name: '/home', page: () => const HomeScreen()),
         GetPage(name: '/note', page: () => const NotificationScreen()),
