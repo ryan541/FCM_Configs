@@ -70,4 +70,13 @@ flutter {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.microsoft.azure:notification-hubs-android-sdk:0.6@aar'
+    
 }
+
+repositories {
+    maven {
+        url "https://dl.bintray.com/microsoftazuremobile/SDK"
+    }
+}
+
