@@ -16,8 +16,7 @@ class FirebaseApi {
 
   void handleMessage(RemoteMessage message) {
     if (message == null) return;
-    Navigator.pushNamed(
-      navigatorKey.currentContext!,
+    navigatorKey.currentState?.pushNamed(
       NotificationScreen.route,
       arguments: message,
     );

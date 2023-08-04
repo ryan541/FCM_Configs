@@ -17,9 +17,9 @@ class NotificationScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('Title : ${message?.notification?.title ?? "Null"}'),
-            Text('Body : ${message?.notification?.body ?? "Null"}'),
-            Text('Payload : ${message?.data ?? "Null"}'),
+            Text('Title : ${message?.notification?.title}'),
+            Text('Body : ${message?.notification?.body}'),
+            Text('Payload : ${message?.data}'),
           ],
         ),
       ),
